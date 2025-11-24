@@ -23,7 +23,7 @@ Por ser o único que funcionava na instância Global Standart e que havia person
 
 ## Criando um agente no Microsoft Foundry
 ### Criação do agente
-Através da página ~Agents~, fiz a criação do Agente OWASP:
+Através da página **Agents**, fiz a criação do Agente OWASP:
 
 <img width="1920" height="912" alt="6" src="https://github.com/user-attachments/assets/83db7380-5d7d-4acd-b854-653bc86e2b37" />
 
