@@ -1,7 +1,8 @@
 # AgenteOWASP
-Foi realizado a tentativa da criação de um agente que trata e analisa códigos do tipo python e encontra vulnerabilidades de segurança através da documentação do OWASP Top 10, que informa as vulnerabilidades mais importantes de segurança 
+Foi realizado a tentativa da criação de um agente que trata e analisa códigos do tipo python e encontra vulnerabilidades de segurança através da documentação do OWASP Top 10, que informa as vulnerabilidades mais importantes de segurança e envia alertas automaticamente para o Sentinel.
+O AgentOWASP é um assistente especializado em segurança de código Python, cujo objetivo principal é analisar trechos de código e identificar vulnerabilidades conforme a documentação OWASP Top 10. Ele funciona de forma automatizada: você envia o código Python pelo script, que faz a requisição para o Foundry Agent; o agente processa o código e retorna um JSON contendo o próprio código analisado e uma lista de vulnerabilidades detectadas, cada uma com tipo, linha, risco e sugestão de mitigação. O script então captura automaticamente esse JSON e envia os dados para o Azure Sentinel, criando logs estruturados que incluem timestamp, código analisado e vulnerabilidades. O agente tem limite de caracteres no código analisado (5.000), detecta vulnerabilidades como SQL Injection, XSS e Insecure Deserialization, gera alertas JSON prontos para o Sentinel e elimina a necessidade de inserção manual de vulnerabilidades ou uso do chat do Foundry. Ele permite segurança automatizada, centralização de alertas, análise escalável de múltiplos códigos e redução de erros manuais, integrando de forma prática e eficiente a análise de segurança de código Python com monitoramento no Azure Sentinel.
 
-##Primeiro, foi criado o Resource Group do projeto
+## Primeiro, foi criado o Resource Group do projeto
 
 <img width="1920" height="904" alt="1" src="https://github.com/user-attachments/assets/10eb11d8-b68a-4887-b426-d2c47436e5b3" />
 
@@ -47,5 +48,11 @@ Código a ser analisado:
 <img width="722" height="793" alt="7" src="https://github.com/user-attachments/assets/08b6a92b-be72-4564-b5c3-09e760c73527" />
 
 Como eu gostaria que ele criasse um objeto JSON para a integração com o Azure Sentinel, foi necessário criar um Script via Python para fazer a integração com a API do Microsoft Sentinel, que está no arquivo *integration-foundry-siem.py*
+
+## Extra: Criação do ambiente SIEM
+
+Foi feito a criação do ambiente no Azure Sentinel para vermos os alertas do SIEM através dos seguintes comandos:
+
+<img width="1602" height="390" alt="sentinel-1" src="https://github.com/user-attachments/assets/2ecab14c-3aad-4275-87af-1a376c50b971" />
 
 
