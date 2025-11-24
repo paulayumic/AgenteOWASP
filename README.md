@@ -52,6 +52,12 @@ Código a ser analisado:
 
 Como eu gostaria que ele criasse um objeto JSON para a integração com o Azure Sentinel, foi necessário criar um Script via Python para fazer a integração com a API do Microsoft Sentinel, que está no arquivo *integration-foundry-siem.py*
 
+Então, seu input é feito através do script, onde iremos abrir o arquivo e inserir um trecho de código a ser analisado:
+```python
+with open("meu-codigo-inseguro.py", "r") as f:
+    codigo_python = f.read()
+```
+
 ## Extra: Criação do ambiente SIEM
 
 Foi feito a criação do ambiente no Azure Sentinel para vermos os alertas do SIEM através dos seguintes comandos:
