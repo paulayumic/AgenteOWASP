@@ -13,13 +13,16 @@ O AgentOWASP é um assistente especializado em segurança de código Python, cuj
 Após ter dado alguns erros na criação do recurso (por problema da região e incompatibilidade do GPT com ela), refiz os passos através de bash no CLI, que tem menor erro de sincronização:
 
 <img width="602" height="117" alt="2 4" src="https://github.com/user-attachments/assets/4f00e7c5-71bf-4327-ba43-16c5bc5c1c59" />
+
 Após o sucesso da criação, fui para o Foundry.
-##Deploy do Chat GPT-4.1 Mini
+
+## Deploy do Chat GPT-4.1 Mini
 Por ser o único que funcionava na instância Global Standart e que havia personalização de token, utilizei-o.
 
 <img width="667" height="895" alt="5 1" src="https://github.com/user-attachments/assets/bdeb25f4-092e-458c-8d1c-fc0a6a5a7698" />
-##Criando um agente no Microsoft Foundry
-###Criação do agente
+
+## Criando um agente no Microsoft Foundry
+### Criação do agente
 Através da página ~Agents~, fiz a criação do Agente OWASP:
 
 <img width="1920" height="912" alt="6" src="https://github.com/user-attachments/assets/83db7380-5d7d-4acd-b854-653bc86e2b37" />
